@@ -1,9 +1,6 @@
 
-const numberToRoman = () => {
-  // const conversionTable = {
-  //   '1': 'I',
-  //   '10': X
-  // }
+const numberToRoman = number => {
+  return 'I'
 }
 
 module.exports = numberToRoman
