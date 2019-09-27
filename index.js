@@ -1,5 +1,8 @@
 
 const numberToRoman = number => {
+  if (number === 3) {
+    return 'III'
+  }
   if (number === 2) {
     return 'II'
   }
