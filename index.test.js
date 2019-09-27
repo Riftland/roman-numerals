@@ -1,13 +1,15 @@
+const numberToRoman = require('./index')
+
 describe('Kata Roman Numerals', () => {
-  const SAMPLES = [
+  const TEST_LIST = [
     {
-      title: 'fails',
+      title: 'should convert 1 to I',
       input: 1,
-      expected: 2
+      expected: 'I'
     }
   ]
 
-  SAMPLES.forEach(sample => {
+  TEST_LIST.forEach(sample => {
     it(sample.title, () => {
       expect(sample.input).toBe(sample.expected)
     })
