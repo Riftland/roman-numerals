@@ -47,6 +47,11 @@ describe('Kata Roman Numerals', () => {
       input: 9,
       expected: 'IX'
     },
+    {
+      title: 'should convert 10 to X',
+      input: 10,
+      expected: 'X'
+    },
   ]
 
   TEST_LIST.forEach(sample => {
