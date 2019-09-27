@@ -18,6 +18,11 @@ const numberToRoman = number => {
     roman += conversionTable[1]
     numberToRoman(number)
   }
+  if (number > 10) {
+    number -= 10
+    roman += conversionTable[10]
+    numberToRoman(number)
+  }
   return `${roman}${conversionTable[number]}`
 }
 
