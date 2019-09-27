@@ -1,15 +1,16 @@
 
 const numberToRoman = number => {
-  if (number === 3) {
-    return 'III'
+
+  switch (number) {
+    case 1:
+      return 'I'
+    case 2:
+      return 'II'
+    case 3:
+      return 'III'
+    case 5:
+      return 'V'
   }
-  if (number === 2) {
-    return 'II'
-  }
-  if (number === 5) {
-    return 'V'
-  }
-  return 'I'
 }
 
 module.exports = numberToRoman
