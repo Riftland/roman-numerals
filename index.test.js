@@ -52,6 +52,11 @@ describe('Kata Roman Numerals', () => {
       input: 10,
       expected: 'X'
     },
+    {
+      title: 'should convert 11 to XI',
+      input: 11,
+      expected: 'XI'
+    },
   ]
 
   TEST_LIST.forEach(sample => {
