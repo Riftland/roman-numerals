@@ -6,6 +6,11 @@ describe('Kata Roman Numerals', () => {
       title: 'should convert 1 to I',
       input: 1,
       expected: 'I'
+    },
+    {
+      title: 'should convert 5 to V',
+      input: 5,
+      expected: 'V'
     }
   ]
 
