@@ -5,14 +5,17 @@ const numberToRoman = number => {
     '1': 'I',
     '2': 'II',
     '3': 'III',
-    '4': 'IV',
     '5': 'V',
-    '9': 'IX',
     '10': 'X'
   }
   if (number > 5 && number < 9) {
     number -= 5
     roman += conversionTable[5]
+    numberToRoman(number)
+  }
+  if ((number + 1) % 5 === 0) {
+    number = number + 1
+    roman += conversionTable[1]
     numberToRoman(number)
   }
   return `${roman}${conversionTable[number]}`
