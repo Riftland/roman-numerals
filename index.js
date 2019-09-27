@@ -1,6 +1,19 @@
 
 const numberToRoman = number => {
 
+  let i = 0;
+  let roman = ''
+
+  const conversionTable = {
+    '1': 'I'
+  }
+
+  for (let i = 0; i < number; i++) {
+    roman += conversionTable[1]
+  }
+
+  return roman
+
   switch (number) {
     case 1:
       return 'I'
