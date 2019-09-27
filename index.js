@@ -7,7 +7,8 @@ const numberToRoman = number => {
     '3': 'III',
     '4': 'IV',
     '5': 'V',
-    '9': 'IX'
+    '9': 'IX',
+    '10': 'X'
   }
   if (number > 5 && number < 9) {
     number -= 5
